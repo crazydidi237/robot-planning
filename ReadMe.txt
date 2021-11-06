@@ -1,0 +1,8 @@
+-Le dossier "src" contient toutes les classes utilisées pour le projet. Dans src, le fichier MyBestAlgorithm contient l'essentiel du code qui permet les déplacements et les mécaniques des robots. Dans la classe Solution, nous avons codé la fonction isValid() qui renvoie un messqge nous indiquant que les robots ont atteint leur destination sans rentrer en collision.
+-Pour lancer le programme, il faut rentrer en paramètre de OptimizeDistance ou OptimizeMakespan le chemin d'accès vers le fichier JSON de l'instance pour laquelle on souhaite trouver une solution. Ensuite on lance soit Optimize distance, pour l'optimisation de la distance soit OptimizeMakespan pour l'optimisation du Makespan
+	Exemple:  OptimizeMakespan election_109.instance.json   (Pour calculer une solution optimisant le Makespan)
+-Pour visualiser le déplacement des robots sur une grille, il faut lancer la classe MotionViewer avec en paramètres le fichier instance et le fichier solution.
+	Exemple: MotionViewer socg2021_108.instance.json  socg2021_108_makespan.json
+-Les solutions avec le suffixe "_makespan" avant l'extension du json sont les solutions calculées pour le makespan et celles avec le suffixe "_distance" sont calculées pour l'optimisation de la distance. A noter que comme expliqué dans notre rapport nous avons une solution pour une solution déplaçant les robots individuellement en les rapprochant de leur objectif, minimisant ainsi à la fois le makespan et la distance.
+-Le fichier core.jar doit être intégré avant utilisation de MotionViewer.
+-Les instances sont dans le dossier datasets, classées en instances contenant ou non des obstacles. Les solutions sont dans des dossiers solutions à l'intérieur de ces sous dossiers.
